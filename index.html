@@ -19,7 +19,23 @@
             <div class="grid">
                 <nav class="header__navbar">
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item header__navbar-item--seperate">Vào cửa hàng trên ứng dụng</li>
+                        <li class="header__navbar-item header__navbar-item--has-qr header__navbar-item--seperate">
+                            Vào cửa hàng trên ứng dụng
+                            
+                            <!-- Header QR code -->
+                            <div class="header__qr">
+                                <img src="./assets/img/qr_code.png" alt="QR code" class="header__qr-img">
+                                <div class="header__qr-apps">
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/google_play.png" alt="Google Play" class="header__qr-download-img">
+                                    </a>
+                                    <a href="" class="header__qr-link">
+                                        <img src="./assets/img/app_store.png" alt="App Store" class="header__qr-download-img">
+                                    </a>
+
+                                </div>
+                            </div>
+                        </li>
                         <li class="header__navbar-item">
                             <span class="header__navbar-title--no-pointer">Kết nối</span>
                             <a href="" class="header__navbar-icon-link">
@@ -33,11 +49,50 @@
                     </ul>
     
                     <ul class="header__navbar-list">
-                        <li class="header__navbar-item">
+                        <li class="header__navbar-item header__navbar-item--show-noti">
                             <a href="" class="header__navbar-item-link">
                                 <i class="header__navbar-icon fa-solid fa-bell"></i>
                                 Thông báo
                             </a>
+                            <div class="header__noti">
+                                <header class="header__noti-header">
+                                    <h3>Thông báo mới nhận</h3>
+                                </header>
+                                <ul class="header__noti-list">
+                                    <li class="header__noti-item header__noti-item--seen">
+                                        <a href="" class="header__noti-link">
+                                            <img src="https://i.pinimg.com/564x/b7/63/1e/b7631ef2a97540b4b117ef8276c2de07.jpg" alt="" class="header__noti-img">
+                                            <div class="header__noti-info">
+                                                <span class="header__noti-name">Mỹ phẩm Ohui chính hãng</span>
+                                                <span class="header__noti-desc">Mô tả Mỹ phẩm Ohui chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__noti-item">
+                                        <a href="" class="header__noti-link">
+                                            <img src="https://i.pinimg.com/736x/e5/07/99/e50799dcdb80bf3449b81005c01a6093.jpg" alt="" class="header__noti-img">
+                                            <div class="header__noti-info">
+                                                <span class="header__noti-name">Mỹ phẩm Ohui chính hãng</span>
+                                                <span class="header__noti-desc">Mô tả Mỹ phẩm Ohui chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+
+                                    <li class="header__noti-item">
+                                        <a href="" class="header__noti-link">
+                                            <img src="https://i.pinimg.com/564x/91/4b/93/914b933b1921ff8e02f6561c9ffa02b1.jpg" alt="" class="header__noti-img">
+                                            <div class="header__noti-info">
+                                                <span class="header__noti-name">Mỹ phẩm Ohui chính hãng</span>
+                                                <span class="header__noti-desc">Mô tả Mỹ phẩm Ohui chính hãng</span>
+                                            </div>
+                                        </a>
+                                    </li>
+                                </ul>
+                                <footer class="header__noti-footer">
+                                    <a href="" class="header__noti-footer-btn">Xem tất cả</a>
+                                </footer>
+                            </div>
                         </li>
                         <li class="header__navbar-item">
                             <a href="" class="header__navbar-item-link">
@@ -61,6 +116,70 @@
 
 
         </footer>
+    </div>
+
+    <!-- Modal layout-->
+    <div class="modal">
+        <div class="modal__overlay"></div>
+
+        <div class="modal__body">
+            
+
+                <!-- Authen form -->
+                 <div class="auth-form">
+                    <div class="auth-form__container">
+                        <div class="auform-form__header">
+                            <h3 class="auth-form__heading">Đăng ký</h3>
+                            <span class="auth-form__switch-btn">Đăng nhập</span>
+                        </div>
+    
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input type="text" class="auth-form__input" placeholder="Email">
+                            </div>
+    
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Mật khẩu">
+                            </div>
+    
+                            <div class="auth-form__group">
+                                <input type="password" class="auth-form__input" placeholder="Nhập lại mật khẩu">
+                            </div>
+                        </div>
+    
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                Bằng việc đăng kí, bạn đã đồng ý với Shopee về
+                                <a href="" class="auth-form__text-link">Điều khoản dịch vụ</a> & 
+                                <a href="" class="auth-form__text-link">Chính sách bảo mật</a>
+                            </p>    
+                        </div>
+    
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-back btn--normal">Trở lại</button>
+                            <button class="btn btn--primary">Đăng ký</button>
+                        </div>
+                    </div>
+                    
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials--facebook btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-facebook"></i>
+                            <span class="auth-form__socials-text">
+                                Kết nối với Facebook
+                            </span>
+                        </a>
+
+                        <a href="" class="auth-form__socials--google btn btn--size-s btn--with-icon">
+                            <i class="auth-form__socials-icon fa-brands fa-google"></i>
+                            <span class="auth-form__socials-text">
+                                Kết nối với Google
+                            </span>
+                        </a>
+                    </div>
+                 </div>
+
+            
+        </div>
     </div>
 </body>
 </html>
